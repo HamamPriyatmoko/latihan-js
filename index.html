@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan DOM</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .ubah {
+        background-color: blue;
+      }
+      .kotak{
+        width: 25px;
+        height: 25px;
+        margin: 10px auto;
+      }
+      .merah{background-color: red;}
+      .hijau{background-color: green;}
+      .biru{background-color: blue;}
+      
+    </style>
+  </head>
+  <body>
+    <h1>Bermain dengan warna</h1>
+    <button type="button" id="ubahWarna">Ubah warna</button>
+
+    <br></br>
+    <div class="kotak merah"></div>
+    <input name="sMerah" type="range" min="1" max="255">
+    <div class="kotak hijau"></div>
+    <input name="sHijau" type="range" min="1" max="255">
+    <div class="kotak biru"></div>
+    <input name="sBiru" type="range" min="1" max="255">
+    <script src="script.js"></script>
+  </body>
+</html>
