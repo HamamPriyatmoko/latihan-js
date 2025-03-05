@@ -54,3 +54,10 @@ const sUbahWarna = () => {
 
 const inputArr = [sMerah, sHijau, sBiru];
 inputArr.forEach((slider) => slider.addEventListener('input', sUbahWarna));
+
+document.body.addEventListener('mousemove', (event) => {
+  const x = Math.round((event.clientX / window.innerWidth) * 255);
+  const y = Math.round((event.clientY / window.innerWidth) * 255);
+
+  document.body.style.backgroundColor = `rgb(${x},${y},100)`;
+});
